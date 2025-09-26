@@ -1,0 +1,33 @@
+@import url(./reset.css);
+
+.title {
+    color: rgb(24, 4, 123);
+    font-weight: bold;
+}
+.header > h3 {
+    font-weight: bold;
+}
+
+.facts {
+    color: rgb(167, 95, 7);
+}
+
+.list li a {
+    color: green;
+}
+span {
+    font-weight: bold;
+}
+.onTop {
+    color: red;
+}
+[class*="city"] {
+    font-weight: bold;
+}
+[class*="color"] {
+    color: darkmagenta;
+}
+
+.climat ~ p {
+    color: rgb(38, 196, 24);
+}
