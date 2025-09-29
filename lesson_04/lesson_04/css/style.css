@@ -1,0 +1,52 @@
+@import url(./reset.css);
+@import url(./fonts.css);
+body {
+    font-family: "Playfair Display", serif;
+}
+.title {
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.title + p {
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    color: #ababab;
+}
+.main {
+    font-size: 28px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 1.5;
+}
+.text {
+    text-align: left;
+}
+.types {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 1.5;
+}
+ol li > p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+}
+ol li span {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+footer {
+    text-align: center;
+}
+footer a {
+    font-family: "Requiem", serif;
+    font-weight: 400;
+    font-size: 28px;
+    text-transform: capitalize;
+    color: rgb(210, 23, 220);
+    line-height: 1.4;
+}
