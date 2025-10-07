@@ -1,0 +1,41 @@
+@import url(./reset.css);
+@import url(./fonts.css);
+.title {
+    text-transform: uppercase;
+    font-family: "Lato", sans-serif;
+    font-weight: 800;
+    text-align: center;
+    font-size: 32px;
+    margin-top: 82px;
+}
+.section {
+    max-width: 1180px;
+    margin: 0 auto;
+    margin-top: 72px;
+}
+.items {
+    font-size: 0;
+    margin: -34px;
+}
+.item {
+    display: inline-block;
+    width: 33.33333%;
+    font-size: 16px;
+    text-align: center;
+    padding: 34px;
+    vertical-align: top;
+}
+.item h2 {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    text-shadow: 1px 3px 3px #888888a1;
+    margin-top: 24px;
+    text-transform: uppercase;
+}
+.item p {
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    color: #7e7f7c;
+    text-shadow: 1px 2px 4px #b2b3b2b2;
+    margin-top: 26px;
+}
