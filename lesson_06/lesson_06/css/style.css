@@ -30,11 +30,11 @@
     color: #2f302c;
     text-transform: uppercase;
 }
-.title-first {
+.title {
     font-weight: 800;
     margin-top: 20px;
 }
-.title-second {
+.title span {
     font-weight: 700;
 }
 .block {
