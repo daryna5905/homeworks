@@ -1,0 +1,81 @@
+@import url(./reset.css);
+@import url(./fonts.css);
+.container {
+    background-image: url(../img/furniture.png);
+    background-size: cover;
+    width: 100%;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center left;
+}
+.text-content {
+    margin-left: auto;
+    max-width: 47.5%;
+    padding: 114px 0px 110px 0px;
+}
+.text-content p {
+    font-family: "Lato", sans-serif;
+}
+.text {
+    font-size: 20px;
+    color: #2f302c;
+    line-height: 1.4;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.text-content h1 {
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.04;
+    font-size: 96px;
+    color: #2f302c;
+    text-transform: uppercase;
+}
+.title-first {
+    font-weight: 800;
+    margin-top: 20px;
+}
+.title-second {
+    font-weight: 700;
+}
+.block {
+    width: 33.8%;
+    height: 1px;
+    background-color: #2f302c;
+    margin-top: 16px;
+}
+.last {
+    font-weight: 500;
+    line-height: 1.25;
+    color: #7e7f7c;
+    font-size: 16px;
+    margin-top: 20px;
+}
+.before-end {
+    margin-top: 36px;
+}
+.list {
+    margin: 0 auto;
+    max-width: 271px;
+}
+.green {
+    background: url(../img/Check-green.png) 0 0 no-repeat;
+}
+.grey {
+    background: url(../img/Check-grey.png) 0 0 no-repeat;
+}
+.item {
+    min-height: 32px;
+    padding-left: 42px;
+    margin-top: 15px;
+    text-align: left;
+    color: #252b42;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    line-height: 1.7;
+    padding-top: 4px;
+}
+.list-container {
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
