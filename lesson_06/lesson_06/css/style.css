@@ -23,16 +23,14 @@
     font-weight: 700;
     text-transform: uppercase;
 }
-.text-content h1 {
+.title {
+    font-weight: 800;
+    margin-top: 20px;
     font-family: "Montserrat", sans-serif;
     line-height: 1.04;
     font-size: 96px;
     color: #2f302c;
     text-transform: uppercase;
-}
-.title {
-    font-weight: 800;
-    margin-top: 20px;
 }
 .title span {
     font-weight: 700;
