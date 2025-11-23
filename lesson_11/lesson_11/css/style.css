@@ -1,0 +1,203 @@
+@import url(./reset.css);
+.bus {
+    background-image: url("../img/school.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+.bus__body {
+    width: 660px;
+    height: 300px;
+    background-color: #ffbe33;
+    position: fixed;
+    bottom: 100px;
+    left: 100px;
+    border-radius: 50px;
+    padding-top: 50px;
+}
+.bus__windows {
+    position: relative;
+    width: 400px;
+    left: 0;
+    font-size: 0;
+    padding-top: 20px;
+    vertical-align: top;
+    padding-bottom: 20px;
+    display: inline-block;
+    margin-right: 20px;
+}
+.bus__window {
+    display: inline-block;
+    margin-left: 20px;
+    background-color: #90e0ef;
+    width: 80px;
+    height: 80px;
+    border-radius: 15px;
+    border: #ffae00 solid 5px;
+    overflow: hidden;
+}
+[class*="bus__window-highlight"] {
+    background-color: #caf0f8;
+    opacity: 0.7;
+    width: 100%;
+    transform: skewY(20deg) translateY(23px);
+}
+.bus__window-highlight--big {
+    height: 25px;
+    margin-bottom: 10px;
+}
+.bus__window-highlight--small {
+    height: 5px;
+}
+.bus__door {
+    display: inline-block;
+    width: 100px;
+    height: 220px;
+    background-color: #ffae00;
+    border-radius: 15px;
+    padding: 8px;
+}
+bus__windows--door {
+    width: 100%;
+    height: 100%;
+    font-size: 0;
+}
+.bus__window-tall {
+    background-color: #90e0ef;
+    width: 40px;
+    height: 100px;
+    display: inline-block;
+    border-radius: 10px;
+}
+.bus__box {
+    background-color: black;
+    width: 100px;
+    height: 40px;
+    position: relative;
+}
+.bus__box--end {
+    border-bottom-left-radius: 10px;
+    transform: translate(-15px, -10px);
+    left: 0;
+}
+.bus__box--end .bus__box-shadow {
+    border-bottom-left-radius: 50px;
+}
+.bus__box--start .bus__box-shadow {
+    border-bottom-right-radius: 50px;
+}
+.bus__box-shadow {
+    background-color: rgb(30, 28, 28);
+    width: 100%;
+    height: 100%;
+}
+
+.bus__wheel--left .bus__wheel-top {
+    transform: translate(70px, -69px);
+}
+.bus__wheel--right .bus__wheel-top {
+    transform: translate(565px, -130px);
+    position: absolute;
+    z-index: 4;
+}
+.bus__wheel-top {
+    background-color: #ffae00;
+    width: 100px;
+    height: 60px;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+}
+.bus__wheel-rubber {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: black;
+    position: absolute;
+}
+.bus__wheel--left .bus__wheel-rubber {
+    transform: translate(70px, -120px);
+}
+.bus__wheel--right .bus__wheel-rubber {
+    transform: translate(565px, -120px);
+    z-index: 4;
+}
+.bus__wheel-tire {
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    position: absolute;
+    background-color: rgb(159, 158, 158);
+}
+.bus__wheel--left .bus__wheel-tire {
+    transform: translate(85px, -105px);
+}
+.bus__wheel--right .bus__wheel-tire {
+    transform: translate(580px, -105px);
+    z-index: 5;
+}
+.bus__wheel-hub {
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    background-color: rgb(0, 0, 0);
+    transform: translate(50%, 50%);
+}
+
+.bus__line {
+    width: 385px;
+    height: 15px;
+    background-color: #ffae00;
+    border-radius: 5px;
+    transform: translate(175px, -90px);
+}
+.bus__line-shadow {
+    width: 98%;
+    border-radius: 5px;
+    height: 40%;
+    background-color: #ffdf99;
+    margin: 0 auto;
+    transform: translateY(60%);
+    opacity: 0.4;
+}
+.bus__box--start {
+    border-bottom-right-radius: 10px;
+    transform: translate(654px, -120px);
+    z-index: 1;
+}
+.bus__front {
+    width: 150px;
+    height: 150px;
+    background-color: #ffbe33;
+    transform: translate(590px, -272px);
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 80px;
+    position: relative;
+}
+.bus__window-front {
+    position: relative;
+    width: 40px;
+    height: 90px;
+    background-color: #90e0ef;
+    transform: translate(620px, -512px);
+    border: #ffae00 solid 5px;
+    border-radius: 10px;
+    border-top-left-radius: 30px;
+}
+.bus__lamp {
+    transform: translate(-10px, 120px);
+    width: 20px;
+    height: 30px;
+
+    background-color: rgb(187, 2, 2);
+    border-radius: 80%;
+    position: absolute;
+}
+.bus__lamp-shadow {
+    width: 75%;
+    height: 70%;
+    background-color: red;
+    border-radius: 80%;
+    transform: translate(10%, 20%);
+}
