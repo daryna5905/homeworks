@@ -1,0 +1,383 @@
+@import url(./reset.css);
+.bus__title {
+    font-size: 0;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    position: absolute;
+    font-family: "Monomakh", sans-serif;
+    font-weight: 400;
+    color: #8400ff;
+}
+.bus__wrapper {
+    animation-name: move-bus;
+    animation-duration: 9s;
+    animation-fill-mode: forwards;
+    position: absolute;
+    width: 810px;
+    height: 300px;
+    animation-timing-function: linear;
+    top: 60%;
+    left: 5%;
+    animation-delay: 9s;
+}
+@keyframes move-bus {
+    0% {
+        top: 60%;
+        left: 5%;
+    }
+    /* 70% {
+        top: 57%;
+        left: 50%;
+    } */
+
+    100% {
+        top: 60%;
+        left: 110%;
+    }
+}
+@keyframes move-top {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-60px);
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 0;
+    }
+}
+.bus__title span:nth-child(4),
+.bus__title span:nth-child(6),
+.bus__title span:nth-child(8) {
+    margin-right: 6px;
+}
+.bus__title span {
+    font-size: 60px;
+    animation-name: move-top;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 2;
+    animation-duration: 1.1s;
+    position: relative;
+    display: inline-block;
+    animation-timing-function: linear;
+}
+.bus__title span:nth-child(1) {
+    animation-delay: 1.45s;
+}
+.bus__title span:nth-child(2) {
+    animation-delay: 1.5s;
+}
+.bus__title span:nth-child(3) {
+    animation-delay: 1.55s;
+}
+.bus__title span:nth-child(4) {
+    animation-delay: 1.6s;
+}
+.bus__title span:nth-child(5) {
+    animation-delay: 1.65s;
+}
+.bus__title span:nth-child(6) {
+    animation-delay: 1.7s;
+}
+.bus__title span:nth-child(7) {
+    animation-delay: 1.75s;
+}
+.bus__title span:nth-child(8) {
+    animation-delay: 1.8s;
+}
+.bus__title span:nth-child(9) {
+    animation-delay: 1.85s;
+}
+.bus__title span:nth-child(10) {
+    animation-delay: 1.9s;
+}
+.bus__title span:nth-child(11) {
+    animation-delay: 1.95s;
+}
+.bus__title span:nth-child(12) {
+    animation-delay: 2s;
+}
+.bus__title span:nth-child(13) {
+    animation-delay: 2.05s;
+}
+.bus__title span:nth-child(14) {
+    animation-delay: 2.1s;
+}
+.bus {
+    background-image: url("../img/school.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+
+.bus__body {
+    width: 660px;
+    height: 300px;
+    background-color: #ffbe33;
+    position: absolute;
+    bottom: 100px;
+    left: 0px;
+    border-radius: 50px;
+    padding-top: 50px;
+}
+.bus__windows {
+    position: relative;
+    width: 400px;
+    left: 0;
+    font-size: 0;
+    padding-top: 20px;
+    vertical-align: top;
+    padding-bottom: 20px;
+    display: inline-block;
+    margin-right: 20px;
+}
+.bus__window {
+    display: inline-block;
+    margin-left: 20px;
+    background-color: #90e0ef;
+    width: 80px;
+    height: 80px;
+    border-radius: 15px;
+    border: #ffae00 solid 5px;
+}
+[class*="bus__window-highlight"] {
+    background-color: #caf0f8;
+    opacity: 0.7;
+    width: 100%;
+    transform: skewY(20deg) translateY(-900%);
+    animation-duration: 8s;
+    animation-timing-function: linear;
+    animation-name: move-highlight;
+    animation-fill-mode: forwards;
+    animation-delay: 9s;
+}
+@keyframes move-highlight {
+    0% {
+        transform: skewY(20deg) translateY(-50px);
+    }
+    100% {
+        transform: skewY(20deg) translateY(23px);
+    }
+}
+.bus__window-highlight--big {
+    height: 25px;
+    margin-bottom: 10px;
+}
+.bus__window-highlight--small {
+    height: 5px;
+}
+.bus__door {
+    display: inline-block;
+    width: 100px;
+    height: 220px;
+    background-color: #ffae00;
+    border-radius: 15px;
+    padding: 8px;
+}
+bus__windows--door {
+    width: 100%;
+    height: 100%;
+    font-size: 0;
+}
+.bus__window-tall {
+    background-color: #90e0ef;
+    width: 40px;
+    height: 100px;
+    display: inline-block;
+    border-radius: 10px;
+}
+.bus__box {
+    background-color: black;
+    width: 100px;
+    height: 40px;
+    position: relative;
+}
+.bus__box--end {
+    border-bottom-left-radius: 10px;
+    transform: translate(-15px, -10px);
+    left: 0;
+}
+.bus__box--end .bus__box-shadow {
+    border-bottom-left-radius: 50px;
+}
+.bus__box--start .bus__box-shadow {
+    border-bottom-right-radius: 50px;
+}
+.bus__box-shadow {
+    background-color: rgb(30, 28, 28);
+    width: 100%;
+    height: 100%;
+}
+
+.bus__wheel--left .bus__wheel-top {
+    transform: translate(70px, -69px);
+}
+.bus__wheel--right .bus__wheel-top {
+    transform: translate(565px, -135px);
+    position: absolute;
+    z-index: 4;
+}
+.bus__wheel-top {
+    background-color: #ffae00;
+    width: 100px;
+    height: 60px;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+}
+.bus__wheel-rubber {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: black;
+    position: absolute;
+    border: #d8d8d8 5px dashed;
+}
+.bus__wheel--left .bus__wheel-rubber {
+    transform: translate(70px, -120px);
+    animation-name: circle-left;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 9s;
+}
+@keyframes circle-left {
+    0% {
+        transform: translate(70px, -120px) rotate(0deg);
+    }
+    100% {
+        transform: translate(70px, -120px) rotate(360deg);
+    }
+}
+@keyframes circle-right {
+    0% {
+        transform: translate(565px, -125px) rotate(0deg);
+    }
+    100% {
+        transform: translate(565px, -125px) rotate(360deg);
+    }
+}
+
+.bus__wheel--right .bus__wheel-rubber {
+    transform: translate(565px, -125px);
+    z-index: 4;
+    animation-name: circle-right;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 9s;
+    animation-timing-function: linear;
+}
+.bus__wheel-tire {
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    position: absolute;
+    background-color: rgb(159, 158, 158);
+}
+.bus__wheel--left .bus__wheel-tire {
+    transform: translate(85px, -105px);
+}
+.bus__wheel--right .bus__wheel-tire {
+    transform: translate(580px, -110px);
+    z-index: 5;
+}
+.bus__wheel-hub {
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    background-color: rgb(0, 0, 0);
+    transform: translate(50%, 50%);
+}
+
+.bus__line {
+    width: 385px;
+    height: 15px;
+    background-color: #ffae00;
+    border-radius: 5px;
+    transform: translate(175px, -90px);
+}
+.bus__line-shadow {
+    width: 98%;
+    border-radius: 5px;
+    height: 40%;
+    background-color: #ffdf99;
+    margin: 0 auto;
+    transform: translateY(60%);
+    opacity: 0.4;
+}
+.bus__box--start {
+    border-bottom-right-radius: 10px;
+    transform: translate(654px, -120px);
+    z-index: 1;
+}
+.bus__front {
+    width: 150px;
+    height: 150px;
+    background-color: #ffbe33;
+    transform: translate(590px, -272px);
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 80px;
+    position: relative;
+}
+.bus__window-front {
+    position: relative;
+    width: 40px;
+    height: 90px;
+    background-color: #90e0ef;
+    transform: translate(620px, -512px);
+    border: #ffae00 solid 5px;
+    border-radius: 10px;
+    border-top-left-radius: 30px;
+}
+.bus__lamp {
+    transform: translate(-10px, 120px);
+    width: 20px;
+    height: 30px;
+    background-color: rgb(187, 2, 2);
+    border-radius: 80%;
+    position: absolute;
+    animation-name: shadow;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    animation-delay: 5s;
+}
+.bus__lamp-shadow {
+    width: 75%;
+    height: 70%;
+    background-color: red;
+    border-radius: 80%;
+    transform: translate(10%, 20%);
+}
+@keyframes shadow {
+    0% {
+        box-shadow: 1px 1px 25px 0px #ff3e2c;
+    }
+    10% {
+        box-shadow: 1px 1px 25px 15px #ff3e2c;
+    }
+    20% {
+        box-shadow: 1px 1px 25px 20px #ff3e2c;
+    }
+    30% {
+        box-shadow: 1px 1px 25px 10px #ff3e2c;
+    }
+    40% {
+        box-shadow: 1px 1px 25px 20px #ff3e2c;
+    }
+    70% {
+        box-shadow: 1px 1px 25px 10px #ff3e2c;
+    }
+    80% {
+        box-shadow: 1px 1px 25px 20px #ff3e2c;
+    }
+    100% {
+        box-shadow: 1px 1px 25px 12px #ff3e2c;
+    }
+}
+[class*="bus__window"] {
+    overflow: hidden;
+}
