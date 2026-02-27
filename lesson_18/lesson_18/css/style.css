@@ -609,7 +609,7 @@ body {
     }
     .hero__text {
         max-width: 400px;
-        min-width: none;
+        min-width: 0;
     }
     .timetable__group {
         flex-direction: column-reverse;
