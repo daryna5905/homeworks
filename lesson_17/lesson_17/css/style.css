@@ -4,6 +4,9 @@ body {
     font-family: "Lato", sans-serif;
     color: #2f302c;
 }
+.advantage__img {
+    max-width: 60px;
+}
 .wrapper {
     display: flex;
     flex-direction: column;
@@ -208,10 +211,10 @@ img {
     gap: 24px;
 }
 .advantage__img {
-    max-width: 100%;
+    max-width: 60px;
     display: flex;
-    justify-content: center;
     align-items: flex-start;
+    justify-content: center;
 }
 .advantage__title {
     font-weight: 700;
