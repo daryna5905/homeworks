@@ -1,5 +1,6 @@
 const header = document.querySelector(".header");
 const buttons = document.querySelectorAll(".info__item button");
+
 document.addEventListener("click", documentActions);
 function documentActions(e) {
   const targetElement = e.target;
@@ -14,6 +15,7 @@ window.addEventListener("scroll", () => {
     header.classList.remove("scrolled");
   }
 });
+
 buttons.forEach((button) => {
   button.addEventListener("click", () => {
     buttons.forEach((btn) => btn.classList.remove("active"));
