@@ -71,9 +71,7 @@ body {
     left: 0;
     transition: background 0.3s;
 }
-.header__nav-item a:hover::after {
-    background-color: #fff;
-}
+
 .main {
 }
 .hero {
@@ -195,12 +193,7 @@ body {
     background-color: transparent;
     transition: background 0.3s;
 }
-.info__item button:hover::after {
-    background-color: #000;
-}
-.info__item button:hover {
-    transform: scale(1.1);
-}
+
 .info__item button.active::after {
     background-color: #000;
 }
@@ -224,9 +217,7 @@ body {
 .info__card-img img {
     transition: transform 0.3s;
 }
-.info__card:hover .info__card-img img {
-    transform: scale(1.1);
-}
+
 .info__card-link {
     display: flex;
     flex-direction: column;
@@ -260,6 +251,18 @@ body {
     .info__link:hover {
         background-color: #000;
         color: #fff;
+    }
+    .info__card:hover .info__card-img img {
+        transform: scale(1.1);
+    }
+    .info__item button:hover::after {
+        background-color: #000;
+    }
+    .info__item button:hover {
+        transform: scale(1.1);
+    }
+    .header__nav-item a:hover::after {
+        background-color: #fff;
     }
 }
 @media (max-width: 48rem) {
